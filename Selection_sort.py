@@ -1,4 +1,7 @@
 import random
+import time
+startTime = time.time()
+
 myList = random.sample(xrange(10000), 100)
 print myList
 
@@ -15,5 +18,6 @@ def swap_indices(myList, index1, index2):
     myList[index2] = temp
 
     return myList
-new_list = Selection_sort(myList)
-print new_list
+    
+elapsedTime = time.time() - startTime
+print elapsedTime
